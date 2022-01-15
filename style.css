@@ -2,9 +2,16 @@
 .navigation li a {
     text-decoration: none;
     color: #fff;
+    font-size: 18px;
     font-weight: 600;
     padding: 15px 10px;
     cursor: pointer;
+    font-weight: 600;
+    transition: .3s ease-in-out;
+}
+
+.navigation li a:hover{
+    color: #FF008E;
 }
 .navigation{
     display: flex;
@@ -147,3 +154,73 @@ header{
 .card i{
     font-size: 30px;
 }
+
+/* gallery css start */
+
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+}
+.photo img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border: 3px solid #FF008E;
+}
+
+/* .photo{
+    position: relative;
+    width: 300px;
+    height: 180px;
+    overflow: hidden;
+    cursor: zoom-in;
+    border: 3px solid #FF008E;
+    transition: .3s ease;
+}
+
+.photo::before {
+    content: '';
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,.4);
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: .3s ease;
+    position: absolute;
+    z-index: 5;
+} */
+
+/* contact css start */
+.contact{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+}
+.contact-left img{
+    width: 100%;
+}
+.contact-right form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.text-field{
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 18px;
+    font-family: inherit;
+    outline: none;
+    border: 1px solid #FF008E;
+}
+
+footer p{
+    /* text-align: center; */
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
