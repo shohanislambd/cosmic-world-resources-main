@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Poppins:wght@400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+.navigation li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    padding: 15px 10px;
+    cursor: pointer;
+}
+.navigation{
+    display: flex;
+}
+.navigation li{
+    list-style: none;
+    margin: 10px;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+}
+header{
+    /* height: 100vh; */
+    background-image: url('images/cloud.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0,0,0,.5);
+    background-blend-mode: overlay;
+   
+}
+.logo{
+    cursor: pointer;
+}
+.banner{
+    height: calc(100vh - 80px);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.banner-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.banner-right img{
+    width: 100%;
+}
+.banner-title{
+    font-size: 45px;
+    color: #fff;
+}
+.highlight{
+    color: #FF008E;
+}
+.banner-text{
+    color: #fff;
+    font-size: 18px;
+    margin: 20px 0;
+    line-height: 1.5;
+}
+.primary-button {
+    cursor: pointer;
+    color: white;
+    text-transform: uppercase;
+    border: 0;
+    outline: 0;
+    background: linear-gradient(90deg
+, #D22779,#FF008E );
+    position: relative;
+    top: 0px;
+    font-family: 'Montserrat', sans-serif;
+    padding: 16px;
+    font-size: 18px;
+    border-radius: 5px;
+    box-shadow: 0px 7px 0px 0px #af2065;
+    transition: all 0.1s ease;
+}
+.primary-button:active{
+    top: 5px;
+    box-shadow: 0px 2px 0px 0px #af2065;
+}
+
+.section-title{
+    text-align: center;
+}
+
+.section-title h2{
+    font-size: 45px;
+    border-bottom: 2px solid #FF008E;
+    margin: 50px 0;
+    display:inline-block;
+    letter-spacing: 5px;
+    /* padding: 50px 5px 10px 10px; */
+    
+}
+
+/* feature part css */
+
+.feature{
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+}
+
+.card{
+    width: 300px;
+    padding: 30px;
+    margin: 0 auto;
+    box-shadow: 0 30px 35px rgba(0, 0, 0, .2);
+}
+
+.card .card-icon{
+    width: 30px;
+    height: 30px;
+    padding: 15px;
+    color: #fff;
+    border-radius: 50%;
+    background-color: #FF008E;
+}
+.card h3{
+    color: #FF008E;
+    font-size: 25px;
+}
+.card p{
+    margin: 10px 0 ;
+    line-height: 1.5;
+}
+
+.card a{
+    text-decoration: none;
+    color: #FF008E;
+    font-weight: 600;
+}
+
+.card i{
+    font-size: 30px;
+}
